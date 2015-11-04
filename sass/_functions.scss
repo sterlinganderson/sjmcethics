@@ -1,0 +1,48 @@
+$base-font-size: 16;
+$base-line-height: 21px;
+
+/**
+ * Function which converts real pixels and base width to a percentage
+ * value of that width.
+ */
+@function flex($pixels, $base: $base-line-height) {
+    @return percentage(($pixels / $base));
+}
+
+/**
+ * Function which converts pixel font sizes into an em value
+ */
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+/* Fonts */
+$headline: 	roboto slab, helvetica, arial, sans-serif;
+$body:		times, dtimes new roman,Lucida baskerville, georgia, serif;
+
+/**
+ * Colors d
+ * 
+ * Make all UW colors available
+ *
+ * @see http://www.uc.wisc.edu/brand/web/colors.php
+ */
+
+// Main Colors
+$uw-badger-red:				#b70101;
+$uw-gold:					#e7d9c1;
+$uw-black:					#000000;
+
+// Secondary Colors
+$uw-dark-red:				#660000;
+$uw-medium-red:				#990000;
+$uw-red:					#ac0809;
+$uw-dark-grey:				#6e6a5b;
+$uw-medium-grey: 			#c8c5bb;
+$uw-blue-grey:				#caccbd;
+$uw-light-olive:			#dddac7;
+$uw-olive-grey:				#e8e6d8;
+$uw-light-brown:			#c1b49a;
+$uw-tan:					#eee5c7;
+$uw-light-tan:				#efe8d8;
+$uw-cream:					#f7f5e8;

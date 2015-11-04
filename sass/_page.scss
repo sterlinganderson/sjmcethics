@@ -1,0 +1,55 @@
+/* #page wraps the entire site */
+
+body {
+	background: #000;
+}
+
+div#page {
+	width: 			100%;
+	min-width: 		1214px;
+	background: 	#000;
+	max-width:		1440px;
+	margin: 	0 auto;
+}
+
+/* when the view port is large enough, #outer-top-bar "continues" #top-bar */
+div#outer-top-bar {
+	height: 60px;
+	width: 100%;
+	background: $uw-badger-red;
+	position: absolute;
+	//top:0;
+}
+
+/* #top-bar is the red bar at the top of the site */
+div#top-bar {
+	width:			100%;
+	height: 		60px;
+	min-width: 		1214px;
+	position: 		relative;
+	// box-shadow:		inset 0px -2px #c02222, inset 0px -3px #cc4a4a;
+	background: 	$uw-badger-red;
+}
+
+/* #side is the entire black area */
+div#side {
+	width:			flex(370,1200);
+	background: 	#000;
+	float:			left;
+}
+
+/* #main is everything bordered by the opaque white border on the right */
+div#main {
+	width:			flex(830,1200);
+	background: 	#fff;
+	float: 			left;
+	position: 		relative;
+	margin-top: 	-42px;
+}
+
+footer#colophon {
+	background: 	$uw-red;
+	display: 		block;
+}
+
+

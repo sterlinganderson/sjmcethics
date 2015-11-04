@@ -1,0 +1,78 @@
+
+/* Any screen smaller than 1219 will get these stylings, based on a width of 1000 instead of 1200 */
+@media (max-width: 1219px) {
+
+	/** Redefines from _PAGE */
+	div#page {
+		min-width: 980px;
+	}
+	div#top-bar {
+		min-width: 980px;
+	}
+	div#side {
+		width: flex(270,1000);
+	}
+	div#main {
+		width: flex(730,1000);
+	}
+
+	/** Redefines from _HEADER */
+
+	.top-bar-uw-link {
+		width: 	flex(150,1000);
+		left: 	flex(100,1000);
+	}
+
+	/** Redefines from _NAV */
+
+	#nav > ul {
+		width: flex(700,730);
+	}
+
+	/** Redefines from _STREAM */
+
+	#slider {
+		.slide {			
+			.main-slide-image {
+				width: flex(460,730);
+			}
+			.slide-content-inner {
+				width: flex(220,730);
+				left: flex(480,730);
+			}
+		}
+		.slider-nav {
+			width: flex(100,730);
+			left: flex(475,730);
+		}
+	}
+
+	.stream {
+		width: flex(440,730);
+	}
+
+	.home-sidebar {
+		padding:  12px 0px 12px flex(20,730);
+	}
+
+	.post-sidebar {
+		left: flex(560,730);
+	}
+
+	/** Redefines from _SIDEBAR */
+
+	.side-align {
+		width: flex(250,270);
+	}
+
+	.side-inner-container {
+		width: flex(220,250);
+		margin-left: flex(30,250);
+	}
+	/** Redefines from _FOOTER */
+	footer#colophon {
+		.footer-inner {
+			width: flex(980,1000);
+		}
+	}
+}

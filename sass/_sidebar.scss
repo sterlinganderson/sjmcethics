@@ -1,0 +1,65 @@
+/* #side has a general width of 370 */
+
+#sidebar {
+	color:		$uw-cream;
+	h3 {
+		color:			#fff;
+		font-family: 	$headline;
+		font-weight: 	700;
+		font-size:		em(16,16);
+		margin-bottom: 	12px;
+	}
+}
+
+/* .side-align is the class for anything that needs to be 
+   aligned within the #side namespace */
+.side-align {
+	width: flex(350,370);
+}
+
+/* .sidebar-widget is the class for any widget stylings that should apply to all widgets */
+.sidebar-widget {
+	p, ul {
+		.grey-link {
+			font-family: $headline;
+			color: $uw-dark-grey;
+			font-size:	em(13.5,16);
+			padding-right: 9px;
+			background: transparent url('img/icons/grey-arrow-icon.png') no-repeat right 9px;
+			border: none !important	;
+			&:hover {
+				color: $uw-badger-red;
+				background: transparent url('img/icons/red-arrow-icon.png') no-repeat right 9px;
+			}
+		}
+	}
+	ul {
+		list-style: none;
+		margin:		6px 0;
+		padding: 	0;
+		line-height: 24px;
+		a {
+			color: 	$uw-cream;
+			border-bottom: 1px solid #292929;
+			&:hover {
+				font-family: 	$headline;
+				font-size: em(13.5,16);
+				color:			#ff6465;
+			}
+		}
+		&.sidebar-resource-list {
+			color:	$uw-dark-grey;
+		}
+	}
+}
+
+.side-inner-container {
+	width: flex(240,350);
+	margin-left: flex(110,350);
+	position: relative;
+	padding-bottom: 6px;
+}
+
+.sidebar-widget {
+	border-bottom: 1px solid #292929;
+}

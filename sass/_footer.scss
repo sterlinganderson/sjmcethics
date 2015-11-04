@@ -1,0 +1,85 @@
+footer#colophon {
+	.footer-inner {
+		width: flex(980,1200);
+		position: relative;
+		margin: 0 auto;
+		color: #fff;
+		a {
+			color: #fff;
+			text-decoration: none;
+			&:hover {
+				color: $uw-dark-red;
+			}
+		}
+		.footer-widget {
+			padding-bottom: 6px;
+		}
+		.footer-bar {
+			float: left;
+			padding: 24px flex(20,980) 24px 0px;
+			width: flex(140,980);
+			h3 {
+				font-size: em(13.5);
+				margin-bottom: 6px;
+				font-weight: 700;
+			}
+			p {
+				margin: 0;
+				padding: 0;
+				margin-bottom: 6px;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			form {
+				position: relative;
+			}
+			input {
+			font-family :	$headline;
+			font-weight : 	400;
+			font-size :		em(13.5,16);
+			color :			#c19999;
+			background : 	none;
+			outline : 		none;
+			border : 		none;
+
+			&.footer-newsletter-submit {
+				position: absolute;
+				background: url('img/icons/light-red-arrow-icon.png') no-repeat center center;
+				height: 30px;
+				width: 20%;
+				top:42px;
+				right:0px;
+			}
+
+			&.footer-newsletter-input {
+				margin :		6px 0px 0px;
+				width: 			80%;
+				padding : 		5px 10px 6px;
+				padding-right: 	30px;
+				margin-left:			-10px;
+				font-family: 	$headline;
+				font-size: 		em(13.5);
+			}
+
+			&::-webkit-input-placeholder { 	color:	#c19999; }
+			&:-moz-placeholder {  			color:  #c19999; }
+			&::-moz-placeholder { 			color:  #c19999; }
+			&:-ms-input-placeholder { 		color:  #c19999; }
+
+			&:hover {
+				background-color: #910707;
+			}
+
+		}
+
+		}
+		.footer-contact {
+			width: flex(240,980);
+			margin-right: flex(80,980);
+			text-align: right;
+		}
+	}
+}

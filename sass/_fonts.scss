@@ -1,0 +1,77 @@
+/**
+ * BASE FONTS
+ * ------------------------------------------------------------------------- 
+ */
+
+body {
+	font-family: 	$body; 
+	font-size: 		$base-font-size;
+	line-height: 	$base-line-height;
+}
+
+p {
+	font-family: $body;
+	padding-bottom: 6px;
+	line-height: 21px;
+}
+
+a {
+	text-decoration: 	none;
+	color:				$uw-red;
+	&:hover {
+		color: $uw-dark-red;
+	}
+}
+
+/**
+ * HEADER FONTS
+ * ------------------------------------------------------------------------- 
+ */
+
+h1 {
+	font-family: 	$headline;
+	font-size:		36px;
+	font-weight: 	400;
+	line-height: 	42px;
+	margin: 		0 0 6px 0;
+	padding: 		0;
+	a {
+		color: $uw-black;
+		&:hover {
+			color: $uw-dark-grey;
+		}
+	}
+}
+
+h2 {
+	font-family: 	$headline;
+	font-size:		18px;
+	font-weight:	400;
+	line-height: 	30px;
+	color:			$uw-dark-red;
+	margin: 		0 0 6px 0;
+	padding:		0;
+	a {
+		color: 		$uw-red;
+		&:hover {
+			color:	$uw-dark-red;
+		}
+	}
+	&.author-title{
+		padding-top: 6px;
+	}
+}
+
+h3 {
+	font-family: 	$headline;	
+	font-weight: 	400;
+	font-size: 		15px;
+}
+
+hr {
+	border: 1px solid $uw-black;
+}
+
+p {
+	margin: 0 0 6px 0;
+}

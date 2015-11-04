@@ -1,0 +1,39 @@
+.top-bar-uw-link {
+	display: 		block;
+	width: 			flex(170,1200);
+	height: 		20px;
+	position: 		absolute;
+	margin-top: 	33px;
+	left: 			flex(180,1200);
+	img {
+		max-width: 	100%;
+		height:		auto !important;
+	}
+	span {
+		display: 	none;
+	}
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.header-home-logo {
+	width:			100%;
+	display: 		block;
+	span {
+		display: 	block;
+		float: 		left;
+		&.header-uw-crest {
+			width:			flex(60,240);
+			margin-top: 	-30px;
+		}
+		&.header-center-journalism-ethics {
+			width:			flex(170,240);
+			margin-left:	flex(10,240);
+			margin-top:		12px;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+}
